@@ -4,10 +4,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Login</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css' />
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
 </head>
 
 <body>
+    <div class="container overlay" id="container">
+        <div class="row">
+
+            <!-- signup start -->
+            <div class="col align-center flex-col sign-up">
+                <div class="form-wrapper align-center">
+                    <form action="#" class="form sign-up">
+                        <div class="input-group">
+                            <i class="bx bxs-user"></i>
+                            <input type="text" name="username" id="username" placeholder="username" />
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bx-mail-send'></i>
+                            <input type="email" name="email" id="email" placeholder="email">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" name="password" id="password" placeholder="password">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" name="cnfpswd" id="cnfpswd" placeholder="confirm password">
+                        </div>
+
+                        <button>Sign up</button>
+                        <p>
+                            <span>Already have an account?</span>
+                            <b id="sign-in">Sign in Here</b>
+                        </p>
+                    </form>
+                </div>
+                <div class="form-wrapper">
+                    <div class="social-list align-center sign-up">
+                        <div class="align-center facebook-bg">
+                            <i class='bx bxl-facebook'></i>
+                        </div>
+                        <div class="align-center google-bg">
+                            <i class='bx bxl-google'></i>
+                        </div>
+                        <div class="align-center twitter-bg">
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+                        <div class="align-center insta-bg">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- signup end -->
+
+
+            <!-- signin -->
+            <div class="col align-center flex-col sign-in">
+                <div class="form-wrapper align-center">
+                    <form class="form sign-in">
+                        <div class="input-group">
+                            <i class='bx bxs-user'></i>
+                            <input type="text" name="username" id="username" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <i class='bx bxs-lock-alt'></i>
+                            <input type="password" name="password" id="password" placeholder="Password">
+                        </div>
+                        <button>Sign in</button>
+                        <p>
+                            <b>Forgot password?</b>
+                        </p>
+                        <p>
+                            <span>Don't have an account?</span>
+                            <b id="sign-up">Sign up here</b>
+                        </p>
+                    </form>
+                </div>
+                <div class="form-wrapper">
+                    <div class="social-list align-center sign-in">
+                        <div class="align-center facebook-bg">
+                            <i class='bx bxl-facebook'></i>
+                        </div>
+                        <div class="align-center google-bg">
+                            <i class='bx bxl-google'></i>
+                        </div>
+                        <div class="align-center twitter-bg">
+                            <i class='bx bxl-twitter'></i>
+                        </div>
+                        <div class="align-center insta-bg">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- sign-in end -->
+        </div>
+
+        <!-- content section -->
+        <div class="row content-row">
+            <div class="col align-items flex-col">
+                <div class="text sign-in">
+                    <h2>Welcome Back</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, omnis. Sequi perspiciatis unde eius laboriosam ea dolorem quam autem ratione!
+                    </p>
+                </div>
+            </div>
+
+            <div class="col align-items flex-col">
+                <div class="text sign-up">
+                    <h2>Join With Us</h2>
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut perspiciatis impedit vitae repellat est veniam velit dolores eaque? In, perspiciatis.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- content section end -->
+
+        <script type="module" src="app.js"></script>
 
 </body>
 
